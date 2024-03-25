@@ -17,6 +17,11 @@ const userschema=new schema({
     },
     password:{
         type:String,
+    },
+    isEmailAuthenticated:{
+        type:Boolean,
+        required:true,
+        default:false
     }
 })
 module.exports=mongoose.model("user",userschema);

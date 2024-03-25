@@ -25,5 +25,5 @@ const userdatavalidation=({name,email,username,password})=>{
         }
         resolve();
     })
-}
+} 
 module.exports={userdatavalidation};

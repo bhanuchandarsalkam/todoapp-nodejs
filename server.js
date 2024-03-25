@@ -3,8 +3,8 @@ const app = express();
 const mongoose=require("mongoose");
 const usermodel=require("./models/usermodel");
 const clc=require("cli-color");
-const bcrypt=require("bcrypt");
-const {userdatavalidation}=require("./utils/auth.js")
+const bcrypt=require("bcryptjs");
+const {userdatavalidation, generatetoken}=require("./utils/auth.js")
 const validator=require("validator");
 const {isAuth}=require("./middlewares/Authmiddleware.js")
 require("dotenv").config();
